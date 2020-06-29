@@ -1,0 +1,15 @@
+<%= form_with model: @article, local: true do |f| %>
+  <div>
+    <%= f.label :title %>
+    <br/>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <%= f.label :description %>
+    <br/>
+    <%= f.text_area :description, size: "17x4" %>
+  </div>
+  <p>
+    <%= f.submit 'Save Article' %>
+  </p>
+<% end %>

@@ -10,7 +10,11 @@
   </head>
 
   <body>
-    <%= render partial: 'layouts/messages' %>
-    <%= yield %>
+    <%= render 'layouts/navBar' %>
+    <div id="page-content">
+      <%= render 'layouts/messages' %>
+      <%= yield %>
+    </div>
+    <%= render 'layouts/footer'%>
   </body>
 </html>
